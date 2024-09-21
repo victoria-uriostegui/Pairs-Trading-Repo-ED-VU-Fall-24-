@@ -14,8 +14,11 @@ end_date = dt.datetime(2024, 9, 19)
 symbols_list = ['CHPT', 'TSLA']
 
 #Download data from Yahoo Finance using Yahoo Finance API, returns a data frame with stock data for that period 
-df = yf.download("TSLA", start=start_date, end=end_date)
-print(df)
+tsla_df = yf.download("TSLA", start=start_date, end=end_date)
+print(tsla_df)
+
+chpt_df = yf.download("CHPT", start=start_date, end=end_date)
+print(chpt_df)
 
 #An array to store adjusted closing prices
 symbols=[]
