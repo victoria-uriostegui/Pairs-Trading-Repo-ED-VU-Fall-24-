@@ -15,10 +15,24 @@ symbols_list = ['CHPT', 'TSLA']
 
 #Download data from Yahoo Finance using Yahoo Finance API, returns a data frame with stock data for that period 
 tsla_df = yf.download("TSLA", start=start_date, end=end_date)
-print(tsla_df)
+tsla_df['Symbol'] = "TSLA"
+#print(tsla_df)
 
 chpt_df = yf.download("CHPT", start=start_date, end=end_date)
-print(chpt_df)
+chpt_df['Symbol'] = "CHPT"
+#print(chpt_df)
 
+#Clean and transform the data to make it easier to view/utilize for correlation calculations
+tsla = tsla_df[['Close', 'Symbol']]
+
+#print(tsla)
+
+chpt = chpt_df[[ 'Close', 'Symbol']]
+
+stocks_df = pd.concat([tsla, chpt])
+print(stocks_df)
+
+stocks_df = stocks_df.pivot( columns = 'Symbol', values = 'Close')
+print(stocks_df)
 #An array to store adjusted closing prices
 symbols=[]
