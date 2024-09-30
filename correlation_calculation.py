@@ -32,7 +32,12 @@ chpt = chpt_df[[ 'Close', 'Symbol']]
 stocks_df = pd.concat([tsla, chpt])
 print(stocks_df)
 
-stocks_df = stocks_df.pivot( columns = 'Symbol', values = 'Close')
+stocks_df = stocks_df.pivot(columns = 'Symbol', values = 'Close')
 print(stocks_df)
-#An array to store adjusted closing prices
-symbols=[]
+
+correlation_df = stocks_df.corr(method='pearson')
+correlation_df.head().reset_index()
+#del correlation_df.index.name
+print(correlation_df.head(10))
+
+
