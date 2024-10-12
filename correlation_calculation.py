@@ -4,6 +4,7 @@ import datetime as dt
 import matplotlib.pyplot as plt
 import seaborn
 import yfinance as yf
+import seaborn as sns
 
 
 #Set start date variable as start date for historical data (9/20/23)
