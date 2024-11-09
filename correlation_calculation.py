@@ -30,12 +30,12 @@ for stock in symbols:
 
 #Merge all stock frames along the first axis to prep data for correlation heat matrix
 stocks_df = pd.concat(frames, axis = 1, keys = symbols)
-print(stocks_df.head(10))
+print(stocks_df.head(5))
     
+#Create a correlation matrix using panda's corr() method with the Pearson correlation method    
+correlation_matrix = stocks_df.corr(method='pearson')
+print(correlation_matrix.head(5))
 
-#correlation_df = stocks_df.corr(method='pearson')
-#correlation_df.head().reset_index()
-#del correlation_df.index.name
-#print(correlation_df.head(10))
+print(sns.heatmap(stocks_df.corr(method='pearson')))
 
 
