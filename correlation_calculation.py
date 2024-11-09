@@ -31,10 +31,11 @@ for symbol in symbols:
 
 #Data preprocessing for all stock dataframes to make it easier to view/utilize for correlation calculations
 for key in stocks:
-    stocks[key].drop(columns = ['Symbol', 'Open', 'High', 'Low', 'Close', 'Volume'], inplace = True)
+    stocks[key].drop(columns = ['Symbol', 'Open', 'High', 'Low', 'Close', 'Volume'], axis = 0, inplace = True)
+    stocks[key].drop('Date', axis=1, inplace=True)
     print("NA:", stocks[key].isna().sum())
     print(key, ":", stocks[key].head(3), '\n\n')
-    stocks[key].reset_index()
+    stocks[key].reset_index(drop=True)
     
 
 #stocks_df = pd.concat([])
