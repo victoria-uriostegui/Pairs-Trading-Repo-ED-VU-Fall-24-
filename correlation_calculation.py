@@ -20,29 +20,18 @@ symbols = ['TSLA', 'BMWKY', 'FUJHY', 'DRPRY', 'HMC', 'KS', 'MZDAY', 'TM', 'HYMTF
 symbols.extend(['CHPT', 'EVGO', 'BLNK', 'WBX', 'SPWRQ'])
 
 
-#Dictionary variable to store the dataframes for each stock
-stocks = {}
-
-#Download data from Yahoo Finance using Yahoo Finance API, returns a data frame with stock data for that period 
-for symbol in symbols:
-    stocks[symbol] = yf.download(symbol, start=start_date, end=end_date)
-    stocks[symbol]['Symbol'] = symbol
-
-
+#Download data from Yahoo Finance using Yahoo Finance API, storing them in frames for better categorization
 #Data preprocessing for all stock dataframes to make it easier to view/utilize for correlation calculations
-for key in stocks:
-    stocks[key].drop(columns = ['Symbol', 'Open', 'High', 'Low', 'Close', 'Volume'], axis = 0, inplace = True)
-    stocks[key].drop('Date', axis=1, inplace=True)
-    print("NA:", stocks[key].isna().sum())
-    print(key, ":", stocks[key].head(3), '\n\n')
-    stocks[key].reset_index(drop=True)
+frames = []
+for stock in symbols:
+    stock_curr = yf.download(stock, start=start_date, end=end_date)
+    stock_curr.drop(columns = ['Open', 'High', 'Low', 'Close', 'Volume'], axis = 1, inplace = True)
+    frames.append(stock_curr)
+
+#Merge all stock frames along the first axis to prep data for correlation heat matrix
+stocks_df = pd.concat(frames, axis = 1, keys = symbols)
+print(stocks_df.head(10))
     
-
-#stocks_df = pd.concat([])
-#print(stocks_df)
-
-#stocks_df = stocks_df.pivot(columns = 'Symbol', values = 'Close')
-#print(stocks_df)
 
 #correlation_df = stocks_df.corr(method='pearson')
 #correlation_df.head().reset_index()
