@@ -3,7 +3,7 @@ import pandas as pd
 import datetime as dt
 import matplotlib.pyplot as plt
 import seaborn as sns
-#from polygon import RESTClient
+from polygon import RESTClient
 import yfinance as yf
 
 
@@ -29,12 +29,12 @@ for symbol in symbols:
     stocks[symbol]['Symbol'] = symbol
 
 
-
 #Data preprocessing for all stock dataframes to make it easier to view/utilize for correlation calculations
 for key in stocks:
-    stocks[key].drop(columns = ['Open', 'High', 'Low', 'Close', 'Volume'], inplace = True)
+    stocks[key].drop(columns = ['Symbol', 'Open', 'High', 'Low', 'Close', 'Volume'], inplace = True)
     print("NA:", stocks[key].isna().sum())
     print(key, ":", stocks[key].head(3), '\n\n')
+    stocks[key].reset_index()
     
 
 #stocks_df = pd.concat([])
