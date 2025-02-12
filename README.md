@@ -15,7 +15,7 @@ Pairs trading *needs* two or more stocks with high correlation. Two companies wi
 Co-integration looks for stationary pair where the mean of the spread is fixed. Whenever the spread is deviating from the mean it generates trading opportunity and the spread will possibly revert back to the mean value. Essentially two time series, over a long period of time, move together.
 They might deviate from each other for a short time duration, but in the long run they move in tandem. This property is used in finance to execute carry trade. When two cointegrated stocks deviate, they are expected to fall in line and accordingly the trade is executed using a pairs trading signal to earn profit. 
 
-### Key Take Aways :memo: :pencil:
+### Key Take Aways :memo: 
 In order to execute pairs trading sucessfully, you must have at least two stocks that are correlated and cointergrated. Lastly, the use of a pairs trading signal will be used to know when to buy and sell each respective stock. 
 
 ***Note:** We are currently working on a pairs trading signal. More detail about a pairs trading signal will be added once compelted*
