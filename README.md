@@ -37,7 +37,7 @@ In order to execute pairs trading successfully, you must have at least two stock
 ## Poster for Cal State Univeristy, Fullerton first Computer Science Showcase on April 8th, 2024 💻🐘
 We were honrored to be selected to present and complete in the first Computer Science Showcase at CSUF! Out poster contains many insights into our logic, methods, and conclusions. Feel free to peak! 
 
-![Computer Science Showcase Poster](VU & ED PT Repository.pdf)
+[Computer Science Showcase Poster](VU & ED PT Repository.pdf)
 
 ## Conlcusion 💭
 In conclusion, our research yields unexpected findings. Our hypothesis stipulates that our implementation of a pairs trading strategy will yield sizeable profits given two cointegrated stocks and will be convenient for the average trader to utilize. However, our findings show that although more than $200 was accrued through our pairs trading implementation, our results were not up to par with expectations and fell short of other comparable projects. Limitations encountered include using stocks that were cointegrated but had large price gaps, which made the process of purchasing and buying equivalent amounts of stocks complicated. In terms of our goal of minimizing human intervention in our program to have a relatively automated system, we fall short of our goal to simplify the process of pairs trading, as much analysis and computation must still be completed manually. Despite these setbacks, our research remains compelling in the merits of the pairs trading strategy and sets the foundation for further study.
