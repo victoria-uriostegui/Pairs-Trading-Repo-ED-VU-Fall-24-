@@ -34,8 +34,23 @@ In order to execute pairs trading successfully, you must have at least two stock
 - **Stats Model API**: is a Python module that provides classes and functions for the estimation of many different statistical models, conducting statistical tests, and statistical data exploration
 - **Yahoo Finance API**: is a free tool that allows developers to access and retrieve real-time and historical financial data from Yahoo Finance
 
-## Poster for Cal State Univeristy, Fullerton first Computer Science showcase on April 8th, 2024 💻🐘
+## Poster for Cal State Univeristy, Fullerton first Computer Science Showcase on April 8th, 2024 💻🐘
 We were honrored to be selected to present and complete in the first Computer Science Showcase at CSUF! Out poster contains many insights into our logic, methods, and conclusions. Feel free to peak! 
+
+![Computer Science Showcase Poster](VU & ED PT Repository.pdf)
+
+## Conlcusion 💭
+In conclusion, our research yields unexpected findings. Our hypothesis stipulates that our implementation of a pairs trading strategy will yield sizeable profits given two cointegrated stocks and will be convenient for the average trader to utilize. However, our findings show that although more than $200 was accrued through our pairs trading implementation, our results were not up to par with expectations and fell short of other comparable projects. Limitations encountered include using stocks that were cointegrated but had large price gaps, which made the process of purchasing and buying equivalent amounts of stocks complicated. In terms of our goal of minimizing human intervention in our program to have a relatively automated system, we fall short of our goal to simplify the process of pairs trading, as much analysis and computation must still be completed manually. Despite these setbacks, our research remains compelling in the merits of the pairs trading strategy and sets the foundation for further study.
+
+## Future Work ⚒️
+In future revisions, we aim to broaden the functionality and scalability of our project, as well as increase the return on investment. Implementations and edits to accomplish this goal include implementing machine learning to allow the system to learn from the pairs trading algorithm to make more sophisticated real-time decisions, adapting the program to be easier to use for the average user, and utilizing more sophisticated statistical analysis practices to have more accurate and relevant figures upon which the pairs trading strategy can be utilized, such as testing which specific rolling window expanse is most effective.
+
+## References 📔
+James, Chen. “Pairs Trade: Definition, How Strategy Works, and Example.” Investopedia, 26 June 2021, www.investopedia.com/terms/p/pairstrade.asp.
+Auquan. “Tutorials/Pairs Trading.ipynb at Master · Auquan/Tutorials.” GitHub, 2025, github.com/Auquan/Tutorials/blob/master/Pairs%20Trading.ipynb.
+Kramer, Leslie . “Long Position vs. Short Position: What’s the Difference?” Investopedia, 2019, www.investopedia.com/ask/answers/100314/whats-difference-between-long-and-short-position-market.asp.
+
+
 
 
 
