@@ -34,6 +34,8 @@ In order to execute pairs trading successfully, you must have at least two stock
 - **Stats Model API**: is a Python module that provides classes and functions for the estimation of many different statistical models, conducting statistical tests, and statistical data exploration
 - **Yahoo Finance API**: is a free tool that allows developers to access and retrieve real-time and historical financial data from Yahoo Finance
 
+## Poster for Cal State Univeristy, Fullerton first Computer Science showcase on April 8th, 2024 💻🐘
+We were honrored to be selected to present and complete in the first Computer Science Showcase at CSUF! Out poster contains many insights into our logic, methods, and conclusions. Feel free to peak! 
 
 
 
