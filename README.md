@@ -35,7 +35,7 @@ In order to execute pairs trading successfully, you must have at least two stock
 - **Yahoo Finance API**: is a free tool that allows developers to access and retrieve real-time and historical financial data from Yahoo Finance
 
 ## Poster for Cal State Univeristy, Fullerton first Computer Science Showcase on April 8th, 2024 💻🐘
-We were honrored to be selected to present and complete in the first Computer Science Showcase at CSUF! Out poster contains many insights into our logic, methods, and conclusions. Feel free to peak! 
+We were honrored to be selected to present and compete in the first Computer Science Showcase at CSUF! Our poster contains many insights into our logic, methods, and conclusions. Feel free to peak! 
 
 ![Computer Science Showcase Poster](CS-Showcase-Poster.png)
 
